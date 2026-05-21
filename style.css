@@ -1,372 +1,383 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
 }
 
-body{
-background:#081224;
-color:white;
-
-}
-
-.layout{
-display:flex;
-height:100vh;
+body {
+    background: #081224;
+    color: white;
 
 }
 
-.sidebar{
-width:260px;
-background:#0d1a33;
-padding:30px;
-border-right:1px solid rgba(255,255,255,0.05);
+.layout {
+    display: flex;
+    height: 100vh;
 
 }
 
-.logo{
-margin-bottom:50px;
+.sidebar {
+    width: 260px;
+    background: #0d1a33;
+    padding: 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
 
 }
 
-.logo span{
-color:#3b82f6;
-
-}
-.dashboard{
-padding:40px;
-color:white;
+.logo {
+    margin-bottom: 50px;
 
 }
 
-.dashboard-topo{
-display:flex;
-justify-content:space-between;
-align-items:center;
+.logo span {
+    color: #3b82f6;
 
 }
 
-.dashboard-topo button{
-padding:12px 20px;
-border:none;
-background:#2563eb;
-border-radius:12px;
-color:white;
+.dashboard2 {
+    position: fixed;
+    top: 20px;
+    left: 300px;
+
+    width: 1600px;
+    height: 1600px;
+}
+
+.dashboard {
+    padding: 40px;
+    color: white;
 
 }
 
-.cards-dashboard{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-margin-top:30px;
+.dashboard-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-.dashboard-card{
-padding:25px;
-border-radius:20px;
+.dashboard-topo button {
+    padding: 12px 20px;
+    border: none;
+    background: #2563eb;
+    border-radius: 12px;
+    color: white;
 
 }
 
-.saldo{
-background:#10203d;
+.cards-dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
 
 }
 
-.receita{
-background:#0f766e;
+.dashboard-card {
+    padding: 25px;
+    border-radius: 20px;
 
 }
 
-.despesa{
-background:#991b1b;
+.saldo {
+    background: #10203d;
 
 }
 
-.metas{
-margin-top:30px;
+.receita {
+    background: #0f766e;
 
 }
 
-.meta-card{
-background:#10203d;
-padding:25px;
-border-radius:20px;
+.despesa {
+    background: #991b1b;
 
 }
 
-.barra{
-height:15px;
-background:#1e293b;
-border-radius:20px;
-margin-top:20px;
+.metas {
+    margin-top: 30px;
 
 }
 
-.progresso{
-width:70%;
-height:100%;
-background:#2563eb;
-border-radius:20px;
+.meta-card {
+    background: #10203d;
+    padding: 25px;
+    border-radius: 20px;
 
 }
 
-nav{
-display:flex;
-flex-direction:column;
-gap:15px;
+.barra {
+    height: 15px;
+    background: #1e293b;
+    border-radius: 20px;
+    margin-top: 20px;
 
 }
 
-nav a{
-text-decoration:none;
-color:white;
-padding:15px;
-border-radius:12px;
-transition:0.3s;
+.progresso {
+    width: 70%;
+    height: 100%;
+    background: #2563eb;
+    border-radius: 20px;
 
 }
 
-nav a:hover{
-background:#152544;
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
 }
 
-.conteudo{
-flex:1;
-padding:40px;
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
 
 }
 
-.topo{
-display:flex;
-justify-content:space-between;
-align-items:center;
+nav a:hover {
+    background: #152544;
 
 }
 
-.topo button{
-padding:12px 20px;
-border:none;
-border-radius:12px;
-background:#2563eb;
-color:white;
-cursor:pointer;
+.conteudo {
+    flex: 1;
+    padding: 40px;
 
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-margin-top:40px;
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-.card{
-background:#10203d;
-padding:25px;
-border-radius:20px;
+.topo button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
 
 }
 
-.card h2{
-margin-top:10px;
-font-size:28px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
 
 }
 
-.carteira{
-padding:40px;
-color:white;
-}
-
-.contas{
-display:flex;
-gap:20px;
-margin-top:30px;
-}
-
-.conta-card{
-flex:1;
-padding:25px;
-border-radius:20px;
-color:white;
-}
-
-.nubank{
-background:linear-gradient(135deg,#6d28d9,#9333ea);
-}
-
-.Nubank{
-background:linear-gradient(135deg,#6d28d9,#9333ea );
-}
-
-
-.cartoes{
-display:flex;
-gap:20px;
-margin-top:20px;
-}
-
-.cartao{ 
-width:320px;
-height:180px;    
-padding:25px;
-border-radius:20px;
-color:white;
-}
-
-.roxo{
-background:linear-gradient(135deg,#5b21b6,#9333ea);
-}
-
-.preto{
-background:linear-gradient(135deg,#111827,#374151);
-}
-
-
-.transacoes{
-padding:40px;
-color:white;
+.card {
+    background: #10203d;
+    padding: 25px;
+    border-radius: 20px;
 
 }
 
-.form-transacao{
-background:#10203d;
-padding:25px;
-border-radius:20px;
-display:grid;
-gap:15px;
+.card h2 {
+    margin-top: 10px;
+    font-size: 28px;
+
+}
+
+.carteira {
+    padding: 40px;
+    color: white;
+}
+
+.contas {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.conta-card {
+    flex: 1;
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+}
+
+.nubank {
+    background: linear-gradient(135deg, #6d28d9, #9333ea);
+}
+
+.Nubank {
+    background: linear-gradient(135deg, #6d28d9, #9333ea);
+}
+
+
+.cartoes {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cartao {
+    width: 320px;
+    height: 180px;
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+}
+
+.roxo {
+    background: linear-gradient(135deg, #5b21b6, #9333ea);
+}
+
+.preto {
+    background: linear-gradient(135deg, #111827, #374151);
+}
+
+
+.transacoes {
+    padding: 40px;
+    color: white;
+
+}
+
+.form-transacao {
+    background: #10203d;
+    padding: 25px;
+    border-radius: 20px;
+    display: grid;
+    gap: 15px;
 
 }
 
 .form-transacao input,
-.form-transacao select{
-padding:15px;
-border:none;
-border-radius:10px;
+.form-transacao select {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
 
 }
 
-.form-transacao button{
-padding:15px;
-background:#2563eb;
-border:none;
-border-radius:10px;
-color:white;
+.form-transacao button {
+    padding: 15px;
+    background: #2563eb;
+    border: none;
+    border-radius: 10px;
+    color: white;
 
 }
 
-.lista-transacoes{
-margin-top:30px;
+.lista-transacoes {
+    margin-top: 30px;
 
 }
 
-.transacao-item{
-background:#10203d;
-padding:20px;
-margin-top:15px;
-border-radius:15px;
-display:flex;
-justify-content:space-between;
+.transacao-item {
+    background: #10203d;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
 
 }
 
-.receita-item{
-border-left:5px solid #10b981;
+.receita-item {
+    border-left: 5px solid #10b981;
 
 }
 
-.despesa-item{
-border-left:5px solid #ef4444;
+.despesa-item {
+    border-left: 5px solid #ef4444;
 
 }
 
 
-.relatorios{
-padding:40px;
-color:white;
+.relatorios {
+    padding: 40px;
+    color: white;
 
 }
 
-.cards-relatorio{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-margin-top:30px;
+.cards-relatorio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
 
 }
 
-.relatorio-card{
-background:#10203d;
-padding:25px;
-border-radius:20px;
+.relatorio-card {
+    background: #10203d;
+    padding: 25px;
+    border-radius: 20px;
 
 }
 
-.relatorio-card h2{
-margin-top:15px;
-font-size:30px;
+.relatorio-card h2 {
+    margin-top: 15px;
+    font-size: 30px;
 
 }
 
-.historico-relatorio{
-margin-top:40px;
-background:#10203d;
-padding:25px;
-border-radius:20px;
+.historico-relatorio {
+    margin-top: 40px;
+    background: #10203d;
+    padding: 25px;
+    border-radius: 20px;
 
 }
 
-table{
-width:100%;
-margin-top:20px;
-border-collapse:collapse;
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
 
 }
 
-th,td{
-padding:15px;
-text-align:left;
-border-bottom:1px solid rgba(255,255,255,0.1);
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
 }
 
-.config{
-padding:40px;
-color:white;
+.config {
+    padding: 40px;
+    color: white;
 
 }
 
-.config-card{
-background:#10203d;
-padding:30px;
-border-radius:20px;
-width:500px;
-display:flex;
-flex-direction:column;
-gap:15px;
+.config-card {
+    background: #10203d;
+    padding: 30px;
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
 }
 
 .config-card input,
-.config-card select{
-padding:15px;
-border:none;
-border-radius:10px;
-outline:none;
+.config-card select {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
 
 }
 
-.config-card button{
-padding:15px;
-background:#2563eb;
-border:none;
-border-radius:10px;
-color:white;
-cursor:pointer;
+.config-card button {
+    padding: 15px;
+    background: #2563eb;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
 
 }
