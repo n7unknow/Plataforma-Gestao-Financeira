@@ -8,13 +8,11 @@
 body {
     background: #081224;
     color: white;
-
 }
 
 .layout {
     display: flex;
     height: 990px;
-
 }
 
 .sidebar {
@@ -22,19 +20,23 @@ body {
     background: #0d1a33;
     padding: 30px;
     border-right: 1px solid rgba(255, 255, 255, 0.05);
-
 }
 
 .logo {
     margin-bottom: 50px;
-
 }
 
 .logo span {
     color: #3b82f6;
-
 }
+.img_usuario {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 
+    display: block;
+}
 .dashboard2 {
     position: fixed;
     top: 20px;
@@ -83,14 +85,12 @@ body {
 .dashboard {
     padding: 40px;
     color: white;
-
 }
 
 .dashboard-topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .dashboard-topo button {
@@ -99,7 +99,6 @@ body {
     background: #2563eb;
     border-radius: 12px;
     color: white;
-
 }
 
 .cards-dashboard {
@@ -107,40 +106,33 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 30px;
-
 }
 
 .dashboard-card {
     padding: 25px;
     border-radius: 20px;
-
 }
 
 .saldo {
     background: #10203d;
-
 }
 
 .receita {
     background: #0f766e;
-
 }
 
 .despesa {
     background: #991b1b;
-
 }
 
 .metas {
     margin-top: 30px;
-
 }
 
 .meta-card {
     background: #10203d;
     padding: 25px;
     border-radius: 20px;
-
 }
 
 .barra {
@@ -148,7 +140,6 @@ body {
     background: #1e293b;
     border-radius: 20px;
     margin-top: 20px;
-
 }
 
 .progresso {
@@ -156,14 +147,12 @@ body {
     height: 100%;
     background: #2563eb;
     border-radius: 20px;
-
 }
 
 nav {
     display: flex;
     flex-direction: column;
     gap: 15px;
-
 }
 
 nav a {
@@ -172,25 +161,21 @@ nav a {
     padding: 15px;
     border-radius: 12px;
     transition: 0.3s;
-
 }
 
 nav a:hover {
     background: #152544;
-
 }
 
 .conteudo {
     flex: 1;
     padding: 40px;
-
 }
 
 .topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .topo button {
@@ -200,7 +185,6 @@ nav a:hover {
     background: #2563eb;
     color: white;
     cursor: pointer;
-
 }
 
 .cards {
@@ -208,20 +192,17 @@ nav a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 40px;
-
 }
 
 .card {
     background: #10203d;
     padding: 25px;
     border-radius: 20px;
-
 }
 
 .card h2 {
     margin-top: 10px;
     font-size: 28px;
-
 }
 
 .carteira {
@@ -277,7 +258,6 @@ nav a:hover {
 .transacoes {
     padding: 40px;
     color: white;
-
 }
 
 .form-transacao {
@@ -286,15 +266,12 @@ nav a:hover {
     border-radius: 20px;
     display: grid;
     gap: 15px;
-
 }
 
-.form-transacao input,
-.form-transacao select {
+.form-transacao input, .form-transacao select {
     padding: 15px;
     border: none;
     border-radius: 10px;
-
 }
 
 .form-transacao button {
@@ -303,12 +280,10 @@ nav a:hover {
     border: none;
     border-radius: 10px;
     color: white;
-
 }
 
 .lista-transacoes {
     margin-top: 30px;
-
 }
 
 .transacao-item {
@@ -318,24 +293,20 @@ nav a:hover {
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .receita-item {
     border-left: 5px solid #10b981;
-
 }
 
 .despesa-item {
     border-left: 5px solid #ef4444;
-
 }
 
 
 .relatorios {
     padding: 40px;
     color: white;
-
 }
 
 .cards-relatorio {
@@ -343,20 +314,17 @@ nav a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 30px;
-
 }
 
 .relatorio-card {
     background: #10203d;
     padding: 25px;
     border-radius: 20px;
-
 }
 
 .relatorio-card h2 {
     margin-top: 15px;
     font-size: 30px;
-
 }
 
 .historico-relatorio {
@@ -364,28 +332,23 @@ nav a:hover {
     background: #10203d;
     padding: 25px;
     border-radius: 20px;
-
 }
 
 table {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
-
 }
 
-th,
-td {
+th, td {
     padding: 15px;
     text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
 }
 
 .config {
     padding: 40px;
     color: white;
-
 }
 
 .config-card {
@@ -396,16 +359,13 @@ td {
     display: flex;
     flex-direction: column;
     gap: 15px;
-
 }
 
-.config-card input,
-.config-card select {
+.config-card input, .config-card select {
     padding: 15px;
     border: none;
     border-radius: 10px;
     outline: none;
-
 }
 
 .config-card button {
@@ -415,5 +375,4 @@ td {
     border-radius: 10px;
     color: white;
     cursor: pointer;
-
 }
