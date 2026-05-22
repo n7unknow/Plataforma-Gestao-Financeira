@@ -44,6 +44,42 @@ body {
     height: 1600px;
 }
 
+.configuracoes {
+    position: fixed;
+    top: 10px;
+    left: 300px;
+
+    width: 1000px;
+    height: 1000px;
+}
+
+.carteira2 {
+    position: fixed;
+    top: 10px;
+    left: 300px;
+
+    width: 1600px;
+    height: 1600px;
+}
+
+.transacoes2 {
+    position: fixed;
+    top: 10px;
+    left: 300px;
+
+    width: 1600px;
+    height: 1600px;
+}
+
+.relatorios2 {
+    position: fixed;
+    top: 10px;
+    left: 300px;
+
+    width: 1600px;
+    height: 1600px;
+}
+
 .dashboard {
     padding: 40px;
     color: white;
@@ -356,7 +392,7 @@ td {
     background: #10203d;
     padding: 30px;
     border-radius: 20px;
-    width: 500px;
+    width: 1600px;
     display: flex;
     flex-direction: column;
     gap: 15px;
