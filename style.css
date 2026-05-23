@@ -12,7 +12,7 @@ body {
 
 .layout {
     display: flex;
-    height: 990px;
+    height: 940px;
 }
 
 .sidebar {
@@ -29,6 +29,7 @@ body {
 .logo span {
     color: #3b82f6;
 }
+
 .img_usuario {
     width: 80px;
     height: 80px;
@@ -37,6 +38,7 @@ body {
 
     display: block;
 }
+
 .dashboard2 {
     position: fixed;
     top: 20px;
@@ -268,7 +270,8 @@ nav a:hover {
     gap: 15px;
 }
 
-.form-transacao input, .form-transacao select {
+.form-transacao input,
+.form-transacao select {
     padding: 15px;
     border: none;
     border-radius: 10px;
@@ -340,7 +343,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1)
@@ -361,7 +365,8 @@ th, td {
     gap: 15px;
 }
 
-.config-card input, .config-card select {
+.config-card input,
+.config-card select {
     padding: 15px;
     border: none;
     border-radius: 10px;
