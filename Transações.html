@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,62 +9,63 @@
 <body>
     <div class="layout">
         <aside class="sidebar">
-            <header class="topo"></header>
-                <h2><strong>FinControl</strong></h2>
+             <header class="topo">
+                <div>
+                    <h2 class="app_tittle"><strong>FinControl</strong></h2>
+                    <img src="img/usuario_banco.png" alt="Imagem do Usuário" class="img_usuario">
+                    <h2>Olá, "Usuário"👋</h2>
+                    <p>Bem-vindo ao FinControl</p>
+                </div>
+            </header>
             <nav>
                 <a href="Home.html">🏠 Home</a>
                 <a href="Carteira.html">💳 Carteira</a>
+                <a href="Transações.html" class="active_page">💸 Transações</a>
                 <a href="Relatórios.html">📈 Relatórios</a>
                 <a href="Configurações.html">⚙ Configurações</a>
             </nav>
         </aside>
-    </div>
 
         <aside class="transacoes2">
             <h1>Transações</h1>
 
-        <section class="form-transacao">
-            <input type="text" placeholder="Descrição">
-            <input type="number" placeholder="Valor">
+            <section class="form-transacao">
+                <input type="text" placeholder="Descrição da transação">
+                <input type="number" placeholder="Valor da transação">
+                <select placeholder="Selecione o tipo da transação">
+                    <option>Receita</option>
+                    <option>Despesa</option>
+                </select>
+                <select placeholder="Selecione a categoria">
+                    <option>Alimentação</option>
+                    <option>Transporte</option>
+                    <option>Lazer</option>
+                    <option>Salário</option>
+                </select>
+                <button>Adicionar</button>
+            </section>
 
-        <select>
-            <option>Receita</option>
-            <option>Despesa</option>
-        </select>
+            <section class="lista-transacoes">
+                <h2>Histórico</h2>
 
-        <select>
-            <option>Alimentação</option>
-            <option>Transporte</option>
-            <option>Lazer</option>
-            <option>Salário</option>
-        </select>
-    
-            <button>Adicionar</button>
+                <div class="transacao-item receita-item">
+                    <div>
+                        <h3>Salário</h3>
+                        <p>Receita</p>
+                    </div>
+                    <span>+R$4500</span>
+                </div>
 
-        </section>
-
-        <section class="lista-transacoes">
-            <h2>Histórico</h2>
-
-        <div class="transacao-item receita-item">
-
-        <div>
-            <h3>Salário</h3>
-            <p>Receita</p>
-        </div>
-
-        <span>+R$4500</span>
-        </div>
-
-        <div class="transacao-item despesa-item">
-        <div>
-            <h3>Mercado</h3>
-            <p>Alimentação</p>
-        </div>
-        <span>-R$350</span>
-        </div>
-
-        </section>
+                <div class="transacao-item despesa-item">
+                    <div>
+                        <h3>Mercado</h3>
+                        <p>Alimentação</p>
+                    </div>
+                    <span>-R$350</span>
+                </div>
+            </section>
         </aside>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

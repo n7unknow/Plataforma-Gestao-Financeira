@@ -1,51 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configurações</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Configurações</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
     <body>
         <div class="layout">
             <aside class="sidebar">
-                <header class="topo"></header>
-
+                <header class="topo">
+                    <div>
+                        <h2 class="app_tittle"><strong>FinControl</strong></h2>
+                        <img src="img/usuario_banco.png" alt="Imagem do Usuário" class="img_usuario">
+                        <h2>Olá, "Usuário"👋</h2>
+                        <p>Bem-vindo ao FinControl</p>
+                    </div>
+                </header>
                 <nav>
                     <a href="Home.html">🏠 Home</a>
-                    <a href="Carteira.html">💳 Carteira</a>
-                    <a href="Transações.html">💸 Transações</a>
-                    <a href="Relatórios.html">📈 Relatórios</a>
+                        <a href="Carteira.html">💳 Carteira</a>
+                        <a href="Transações.html">💸 Transações</a>
+                        <a href="Relatórios.html">📈 Relatórios</a>
+                        <a href="Configurações.html" class="active_page">⚙ Configurações</a>
                 </nav>
             </aside>
+
+            <aside class="configuracoes">
+                <h1>Configurações</h1>
+
+                <section class="config-card">
+                    <label>Nome usuário</label>
+                    <input id="inputUsuario" type="text" placeholder="Digite o nome">
+
+                    <label>Saldo carteira digital</label>
+                    <input id="inputCarteiraDigital" type="number" placeholder="Digite o saldo digital">
+
+                    <label>Saldo carteira física</label>
+                    <input id="inputCarteiraFisica" type="number" placeholder="Digite o saldo físico">
+
+                    <label>Meta de Economia</label>
+                    <input id="inputMeta" type="number" placeholder="Digite o valor da meta">
+
+                    <label>Mês da meta</label>
+                    <select id="selectMesMeta">
+                        <option>Janeiro</option>
+                        <option>Fevereiro</option>
+                        <option>Março</option>
+                        <option>Abril</option>
+                        <option>Maio</option>
+                        <option>Junho</option>
+                        <option>Julho</option>
+                        <option>Agosto</option>
+                        <option>Setembro</option>
+                        <option>Outubro</option>
+                        <option>Novembro</option>
+                        <option>Dezembro</option>
+                    </select>
+
+                    <label>Tema</label>
+                    <select id="selectTema">
+                        <option>Escuro</option>
+                        <option>Claro</option>
+                    </select>
+
+                    <button id="btnSalvar">Salvar Dados</button>
+                </section>
+            </aside>
         </div>
-
-        <aside class="configuracoes">
-            <h1>Configurações</h1>
-    
-        <section class="config-card">
-            <label>Nome usuário</label>
-                <input type="text"placeholder="Digite o nome">
-
-            <label>Email</label>
-                <input type="email" placeholder="Digite email">
-
-            <label>Tema</label>
-
-            <select>
-                <option>Escuro</option>
-                <option>Claro</option>
-            </select>
-        
-            <label>Notificações</label>
-
-            <select>
-                <option>Ativado</option>
-                <option>Desativado</option>
-            </select>
-
-                <button>Salvar Alterações</button>
-        </section>
-        </aside>
+        <script src="script.js"></script>
     </body>
 </html>
