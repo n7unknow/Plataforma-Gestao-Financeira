@@ -15,6 +15,7 @@ body {
 .layout {
     display: flex;
     min-height: 100vh;
+
 }
 
 .sidebar {
@@ -23,6 +24,7 @@ body {
     background: #0d1a33;
     padding: 30px;
     border-right: 1px solid rgba(255, 255, 255, 0.05);
+    background: linear-gradient(180deg, #081224, #729bdd);
 }
 
 .img_usuario {
@@ -104,7 +106,7 @@ nav a.active_page {
 
 .barra {
     height: 15px;
-    background: #1e293b;
+    background: #2563ed;
     border-radius: 20px;
     margin-top: 20px;
 }
@@ -135,7 +137,11 @@ nav a.active_page {
 
 .nubank,
 .Nubank {
-    background: linear-gradient(135deg, #6d28d9, #9333ea);
+    background: linear-gradient(135deg,  #10203d, #729bdd);
+}
+
+.bi-trash-fill{
+    color: #2563eb;
 }
 
 .cartoes {
@@ -155,8 +161,8 @@ nav a.active_page {
     position: relative;
 }
 
-.roxo { background: linear-gradient(135deg, #5b21b6, #9333ea); }
-.preto { background: linear-gradient(135deg, #111827, #374151); }
+.roxo { background: linear-gradient(135deg,  #10203d, #729bdd); }
+.preto { background: linear-gradient(135deg,  #10203d, #729bdd); }
 
 .btn-apagar-cartao {
     position: absolute;
@@ -255,11 +261,13 @@ nav a.active_page {
     background: #10203d;
     padding: 25px;
     border-radius: 20px;
+    background: linear-gradient(135deg,  #10203d, #729bdd);
 }
 
 .relatorio-card h2 {
     margin-top: 15px;
     font-size: 30px;
+    background: linear-gradient(135deg,  #10203d, #729bdd);
 }
 
 .historico-relatorio {
@@ -268,6 +276,7 @@ nav a.active_page {
     padding: 25px;
     border-radius: 20px;
     overflow-x: auto;
+    background: linear-gradient(135deg,  #10203d, #729bdd);
 }
 
 table {
