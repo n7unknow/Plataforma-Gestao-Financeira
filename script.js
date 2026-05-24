@@ -53,9 +53,7 @@ function salvarMesSelecionado(id, valor) {
 function restaurarMesSelecionado(id) {
     const valor = sessionStorage.getItem(id)
     const select = document.getElementById(id)
-    if (select && valor) {
-        select.value = valor
-    }
+    if (select && valor) select.value = valor
 }
 
 const selectMesHome = document.getElementById('select_mes_home')
@@ -91,7 +89,6 @@ function carregarHome() {
 
     const selectMesHome = document.getElementById('select_mes_home')
     const mesSelecionado = selectMesHome ? selectMesHome.value : ''
-
     const transacoesFiltradas = mesSelecionado ? transacoes.filter(t => t.mes === mesSelecionado) : transacoes
 
     const totalReceitas = transacoesFiltradas.filter(t => t.tipo === 'Receita').reduce((acc, t) => acc + t.valor, 0)
@@ -198,7 +195,6 @@ function carregarRelatorios() {
 
     const selectMesRelatorio = document.getElementById('select_mes_relatorio')
     const mesSelecionado = selectMesRelatorio ? selectMesRelatorio.value : ''
-
     const transacoesFiltradas = mesSelecionado ? transacoes.filter(t => t.mes === mesSelecionado) : transacoes
 
     const somaReceitas = transacoesFiltradas.filter(t => t.tipo === 'Receita').reduce((acc, t) => acc + t.valor, 0)
@@ -258,16 +254,25 @@ function carregarCartoes() {
     if (!lista) return
     lista.innerHTML = ''
     if (!dados.cartoes || dados.cartoes.length === 0) return
-    dados.cartoes.forEach(c => {
+    dados.cartoes.forEach((c, index) => {
         const div = document.createElement('div')
         div.className = 'cartao roxo'
         div.innerHTML = `
+            <button class="btn-apagar-cartao" title="Apagar cartão" onclick="apagarCartao(${index})">
+                <i class="bi bi-trash-fill"></i>
+            </button>
             <span>${c.apelido}</span>
             <h2>•••• ${String(c.numero).slice(-4)}</h2>
             <p>Limite: R$ ${c.limite.toFixed(2)}</p>
         `
         lista.appendChild(div)
     })
+}
+
+function apagarCartao(index) {
+    dados.cartoes.splice(index, 1)
+    salvarDados()
+    carregarCartoes()
 }
 
 carregarCartoes()
