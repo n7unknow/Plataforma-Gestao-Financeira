@@ -105,7 +105,7 @@ nav a.active_page {
 
 .barra {
     height: 15px;
-    background: #10203d;
+    background: #1e293b;
     border-radius: 20px;
     margin-top: 20px;
 }
@@ -113,7 +113,7 @@ nav a.active_page {
 .progresso {
     width: 0%;
     height: 100%;
-    background: #10203d;
+    background: #1e293b;
     border-radius: 20px;
 }
 
