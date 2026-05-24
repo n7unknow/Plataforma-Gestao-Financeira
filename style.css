@@ -256,13 +256,12 @@ nav a.active_page {
     background: #10203d;
     padding: 25px;
     border-radius: 20px;
-    background: linear-gradient(135deg,  #10203d, #729bdd);
 }
 
 .relatorio-card h2 {
     margin-top: 15px;
     font-size: 30px;
-    background: linear-gradient(135deg,  #10203d, #729bdd);
+
 }
 
 .historico-relatorio {
@@ -271,7 +270,6 @@ nav a.active_page {
     padding: 25px;
     border-radius: 20px;
     overflow-x: auto;
-    background: linear-gradient(135deg,  #10203d, #729bdd);
 }
 
 table {
