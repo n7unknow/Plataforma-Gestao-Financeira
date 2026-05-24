@@ -27,20 +27,36 @@
             </aside>
 
             <aside class="relatorios2">
-                <h1>Relatórios Financeiros</h1>
+                <h1>Relatórios Financeiros</h1> 
+                <p>Relatório de desempenho financeiro por mês</p><br> <br>
 
+                <select id="select_mes_relatorio">
+                    <option value="">Todos os meses</option>
+                    <option>Janeiro</option>
+                    <option>Fevereiro</option>
+                    <option>Março</option>
+                    <option>Abril</option>
+                    <option>Maio</option>
+                    <option>Junho</option>
+                    <option>Julho</option>
+                    <option>Agosto</option>
+                    <option>Setembro</option>
+                    <option>Outubro</option>
+                    <option>Novembro</option>
+                    <option>Dezembro</option>
+                </select>
                 <section class="cards-relatorio">
                     <div class="relatorio-card">
                         <h3>Receitas Totais</h3>
-                        <h2>R$ 8.000</h2>
+                        <h2 id="totalReceitas">R$ 0,00</h2>
                     </div>
                     <div class="relatorio-card">
                         <h3>Despesas Totais</h3>
-                        <h2>R$ 2.300</h2>
+                        <h2 id="totalDespesas">R$ 0,00</h2>
                     </div>
                     <div class="relatorio-card">
                         <h3>Saldo Final</h3>
-                        <h2>R$ 5.700</h2>
+                        <h2 id="saldoFinal">R$ 0,00</h2>
                     </div>
                 </section>
 
@@ -52,25 +68,9 @@
                             <th>Receitas</th>
                             <th>Despesas</th>
                             <th>Saldo</th>
+                            <th>Meta</th>
                         </tr>
-                        <tr>
-                            <td>Janeiro</td>
-                            <td>R$8000</td>
-                            <td>R$2500</td>
-                            <td>R$5500</td>
-                        </tr>
-                        <tr>
-                            <td>Fevereiro</td>
-                            <td>R$9000</td>
-                            <td>R$3200</td>
-                            <td>R$5800</td>
-                        </tr>
-                        <tr>
-                            <td>Março</td>
-                            <td>R$7000</td>
-                            <td>R$2000</td>
-                            <td>R$5000</td>
-                        </tr>
+                        <tbody id="tabelaRelatorio"></tbody>
                     </table>
                 </section>
             </aside>

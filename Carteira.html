@@ -27,35 +27,43 @@
             </aside>
 
             <aside class="carteira2">
-                <h1>Minha Carteira</h1>
+                <h1>Minha Carteira</h1> <br> <br>
 
+                <select id="select_mes_carteira">
+                    <option value="">Selecione o mês</option>
+                    <option>Janeiro</option>
+                    <option>Fevereiro</option>
+                    <option>Março</option>
+                    <option>Abril</option>
+                    <option>Maio</option>
+                    <option>Junho</option>
+                    <option>Julho</option>
+                    <option>Agosto</option>
+                    <option>Setembro</option>
+                    <option>Outubro</option>
+                    <option>Novembro</option>
+                    <option>Dezembro</option>
+                </select>
                 <section class="contas">
                     <div class="conta-card nubank">
                         <h2>Carteira Digital</h2>
                         <p>Saldo disponível</p>
-                        <h1>R$ 5.480,00</h1>
+                        <h1 id="saldoDigital">R$ 0,00</h1>
                     </div>
                     <div class="conta-card Nubank">
                         <h2>Carteira Física</h2>
                         <p>Saldo disponível</p>
-                        <h1>R$ 2.100,00</h1>
+                        <h1 id="saldoFisico">R$ 0,00</h1>
                     </div>
                 </section>
 
                 <br><br>
                 <h2>Cartões</h2><br><br>
 
-                <section class="cartoes">
-                    <div class="cartao roxo">
-                        <span>Cartão Principal</span>
-                        <h2>•••• 4589</h2>
-                        <p>Limite: R$ 4.000</p>
-                    </div>
-                    <div class="cartao preto">
-                        <span>Premium</span>
-                        <h2>•••• 7852</h2>
-                        <p>Limite: R$ 7.000</p>
-                    </div>
+                <section class="cartoes" id="listaCartoes"></section> <br>
+                <div style="display:flex; justify-content:center;">
+                    <button id="btnNovoCartao" onclick="window.location.href='NovoCartao.html'">+</button>
+                </div>
                 </section>
             </aside>
         </div>
