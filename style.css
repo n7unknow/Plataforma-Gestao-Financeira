@@ -23,7 +23,6 @@ body {
     background: #0d1a33;
     padding: 30px;
     border-right: 1px solid rgba(255, 255, 255, 0.05);
-    background: linear-gradient(180deg, #081224, #729bdd);
 }
 
 .img_usuario {
@@ -139,9 +138,6 @@ nav a.active_page {
     background: linear-gradient(135deg,  #10203d, #729bdd);
 }
 
-.bi-trash-fill{
-    color: #2563eb;
-}
 
 .cartoes {
     display: flex;
