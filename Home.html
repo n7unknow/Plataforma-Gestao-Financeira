@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FinControl</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <div class="layout">
@@ -12,9 +13,8 @@
                 <header class="topo">
                     <div>
                         <h2 class="app_tittle"><strong>FinControl</strong></h2>
-                        <img src="img/usuario_banco.png" alt="Imagem do Usuário" class="img_usuario">
-                        <h2>Olá, "Usuário"👋</h2>
-                        <p>Bem-vindo ao FinControl</p>
+                        <img src="img/usuario_banco.png" alt="Logo" class="img_usuario">
+                        <h2 id="name_user">Olá, "Usuário"👋</h2> <br>
                     </div>
                 </header>
                 <nav>
@@ -35,22 +35,22 @@
                 <section class="cards-dashboard">
                     <div class="dashboard-card saldo">
                         <p>Saldo Atual</p>
-                        <h2>R$ 5.850</h2>
+                        <h2 id="saldoAtual">R$ 0</h2>
                     </div>
                     <div class="dashboard-card receita">
                         <p>Receitas</p>
-                        <h2>+ R$ 8.000</h2>
+                        <h2 id="receitas">+ R$ 0</h2>
                     </div>
                     <div class="dashboard-card despesa">
                         <p>Despesas</p>
-                        <h2>- R$ 2.150</h2>
+                        <h2 id="despesas">- R$ 0</h2>
                     </div>
                 </section>
 
                 <section class="metas">
                     <div class="meta-card">
                         <h2>Meta Mensal</h2>
-                        <p>Economizar R$2000</p>
+                        <p id="descricaoMeta">Nenhuma meta definida</p>
                         <div class="barra">
                             <div class="progresso"></div>
                         </div>
@@ -65,26 +65,7 @@
                             <th>Categoria</th>
                             <th>Valor</th>
                         </tr>
-                        <tr>
-                            <td>Salário</td>
-                            <td>Receita</td>
-                            <td>R$4500</td>
-                        </tr>
-                        <tr>
-                            <td>Mercado</td>
-                            <td>Despesa</td>
-                            <td>R$350</td>
-                        </tr>
-                        <tr>
-                            <td>Internet</td>
-                            <td>Despesa</td>
-                            <td>R$120</td>
-                        </tr>
-                        <tr>
-                            <td>Viagens</td>
-                            <td>Despesas</td>
-                            <td>R$11000</td>
-                        </tr>
+                        <tbody id="tabelaTransacoes"></tbody>
                     </table>
                 </section>
             </aside>

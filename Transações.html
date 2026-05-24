@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transações Financeiras</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="layout">
@@ -12,9 +13,8 @@
              <header class="topo">
                 <div>
                     <h2 class="app_tittle"><strong>FinControl</strong></h2>
-                    <img src="img/usuario_banco.png" alt="Imagem do Usuário" class="img_usuario">
-                    <h2>Olá, "Usuário"👋</h2>
-                    <p>Bem-vindo ao FinControl</p>
+                    <img src="img/usuario_banco.png" alt="Logo" class="img_usuario">
+                    <h2 id="name_user">Olá, "Usuário"👋</h2> <br>
                 </div>
             </header>
             <nav>
@@ -29,40 +29,45 @@
         <aside class="transacoes2">
             <h1>Transações</h1>
 
-            <section class="form-transacao">
-                <input type="text" placeholder="Descrição da transação">
-                <input type="number" placeholder="Valor da transação">
-                <select placeholder="Selecione o tipo da transação">
+            <form class="form-transacao">
+                <input id="inputDescricao" type="text" placeholder="Descrição da transação" required>
+                <input id="inputValor" type="number" placeholder="Valor da transação" required>
+                <select id="selectTipo" placeholder="Selecione o tipo da transação" required>
                     <option>Receita</option>
                     <option>Despesa</option>
                 </select>
-                <select placeholder="Selecione a categoria">
+                <select id="selectCategoria" placeholder="Selecione a categoria" required>
                     <option>Alimentação</option>
                     <option>Transporte</option>
                     <option>Lazer</option>
-                    <option>Salário</option>
+                    <option>FreeLance/Crédito</option>
+                    <option>Saúde</option>
+                    <option>Educação</option>
+                    <option>Moradia</option>
+                    <option>Outros</option>
                 </select>
-                <button>Adicionar</button>
-            </section>
+                <select id="selectMes" required>
+                    <option value="" disabled selected>Mês</option>
+                    <option>Janeiro</option>
+                    <option>Fevereiro</option>
+                    <option>Março</option>
+                    <option>Abril</option>
+                    <option>Maio</option>
+                    <option>Junho</option>
+                    <option>Julho</option>
+                    <option>Agosto</option>
+                    <option>Setembro</option>
+                    <option>Outubro</option>
+                    <option>Novembro</option>
+                    <option>Dezembro</option>
+                </select>
+
+                <button id="btnAdicionar">Adicionar</button>
+            </form>
 
             <section class="lista-transacoes">
                 <h2>Histórico</h2>
-
-                <div class="transacao-item receita-item">
-                    <div>
-                        <h3>Salário</h3>
-                        <p>Receita</p>
-                    </div>
-                    <span>+R$4500</span>
-                </div>
-
-                <div class="transacao-item despesa-item">
-                    <div>
-                        <h3>Mercado</h3>
-                        <p>Alimentação</p>
-                    </div>
-                    <span>-R$350</span>
-                </div>
+                <div id="listaTransacoes"></div>
             </section>
         </aside>
     </div>

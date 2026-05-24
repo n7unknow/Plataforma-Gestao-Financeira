@@ -389,6 +389,12 @@ td {
     cursor: pointer;
 }
 
+#how_use {
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
 @media (max-width: 768px) {
     .layout {
         flex-direction: column;
