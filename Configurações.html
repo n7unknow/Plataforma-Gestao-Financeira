@@ -10,7 +10,7 @@
     <body>
         <div class="layout">
             <aside class="sidebar">
-                <header class="topo">
+                <header>
                     <div>
                         <h2 class="app_tittle"><strong>FinControl</strong></h2>
                         <img src="img/usuario_banco.png" alt="Logo" class="img_usuario">
@@ -28,6 +28,7 @@
 
             <aside class="configuracoes">
                 <h1>Configurações</h1>
+                <p>Defina as configurações do site</p> <br> <br>
 
                 <form id="formConfig" class="config-card">
                     <label>Nome usuário</label>
@@ -40,7 +41,7 @@
                     <input id="inputCarteiraFisica" type="number" required placeholder="Digite o saldo físico" required>
 
                     <label>Mês de referência</label>
-                    <select id="selectMesRef">
+                    <select id="selectMesRef" required>
                         <option value="" disabled selected>Selecione o mês</option>
                         <option>Janeiro</option>
                         <option>Fevereiro</option>

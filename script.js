@@ -12,6 +12,8 @@ if (!dados.cartoes) dados.cartoes = []
 
 const transacoes = transacoesSalvas || []
 
+// === CONFIGURACOES.HTML === //
+
 function salvarDados() {
     sessionStorage.setItem('fincontrol_config', JSON.stringify(dados))
     sessionStorage.setItem('fincontrol_transacoes', JSON.stringify(transacoes))
@@ -37,6 +39,8 @@ if (formConfig) {
     })
 }
 
+// === CARREGAR NOME NA SIDEBAR === //
+
 function carregarNome() {
     const nameUser = document.getElementById('name_user')
     if (nameUser && dados.usuario) {
@@ -45,6 +49,8 @@ function carregarNome() {
 }
 
 carregarNome()
+
+// === SALVAR E RESTAURAR MÊS SELECIONADO === //
 
 function salvarMesSelecionado(id, valor) {
     sessionStorage.setItem(id, valor)
@@ -82,6 +88,8 @@ if (selectMesCarteira) {
         carregarCarteira()
     })
 }
+
+// === CARREGAR DADOS NA HOME === //
 
 function carregarHome() {
     const saldoAtual = document.getElementById('saldoAtual')
@@ -153,6 +161,8 @@ if (btnAdicionar) {
     })
 }
 
+// === CARREGAR TRANSAÇÕES === //
+
 function carregarTransacoes() {
     const lista = document.getElementById('listaTransacoes')
     if (!lista) return
@@ -176,6 +186,8 @@ function carregarTransacoes() {
 
 carregarTransacoes()
 
+// === CARREGAR CARTEIRA === //
+
 function carregarCarteira() {
     const saldoDigital = document.getElementById('saldoDigital')
     const saldoFisico = document.getElementById('saldoFisico')
@@ -188,6 +200,8 @@ function carregarCarteira() {
     saldoDigital.textContent = 'R$ ' + (carteiraMes.digital || 0).toFixed(2)
     saldoFisico.textContent = 'R$ ' + (carteiraMes.fisica || 0).toFixed(2)
 }
+
+// === CARREGAR RELATÓRIOS === //
 
 function carregarRelatorios() {
     const cardReceitas = document.getElementById('totalReceitas')
@@ -224,6 +238,8 @@ function carregarRelatorios() {
     })
 }
 
+// === CHAMANDO FUNÇÕES DE RESTAURAÇÃO E CARREGAMENTO === //
+
 restaurarMesSelecionado('select_mes_home')
 carregarHome()
 
@@ -232,6 +248,8 @@ carregarCarteira()
 
 restaurarMesSelecionado('select_mes_relatorio')
 carregarRelatorios()
+
+// === FORMULARIO ADICIONAR CARTÕES === //
 
 const formCartao = document.getElementById('formCartao')
 if (formCartao) {
@@ -248,6 +266,8 @@ if (formCartao) {
         window.location.href = 'Carteira.html'
     })
 }
+
+// === CARREGAR CARTÕES NA HOME === //
 
 function carregarCartoes() {
     const lista = document.getElementById('listaCartoes')
@@ -269,10 +289,14 @@ function carregarCartoes() {
     })
 }
 
+// === BOTAO DE APAGAR CARTÃO === //
+
 function apagarCartao(index) {
     dados.cartoes.splice(index, 1)
     salvarDados()
     carregarCartoes()
 }
+
+// === CHAMANDO FUNÇÃO DE CARREGAR CARTÕES NA HOME === //
 
 carregarCartoes()
